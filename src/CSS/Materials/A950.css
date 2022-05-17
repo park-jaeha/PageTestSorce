@@ -1,0 +1,19 @@
+.A160SelectedLocation {
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.A950ListArea {
+    height: 55vh;
+}
+
+.A950Buttons {
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,19 @@
+.MessageArea {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: #f8d3fa; */
+}
+
+.MATextArea {
+    width: 94%;
+    height: 5vh;
+    line-height: 5vh;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    resize: none;
+    overflow: hidden;
+}

@@ -1,0 +1,78 @@
+.MainMenuScreen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8d3fa;
+}
+
+.MMWrap {
+    width: 92%;
+    height: 95vh;
+    border-radius: 1.5em;
+    box-shadow: 3px 3px 3px #ececec;
+    background-color: #fff;
+}
+
+.MainHeader {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainLogo {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainLogoCircle {
+    width: 175px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #7f1085;
+}
+
+.MainLogoCircle2 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.MainLogo img {
+    width: 120px;
+    height: 84.3px;
+    background-color: #fff;
+}
+
+.MainContents {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainContentsBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MainContentsBox > * {
+    margin: 0em 0.5em;
+}
+
+.EmptyMargin {
+    margin: 1.3em 0em;
+}

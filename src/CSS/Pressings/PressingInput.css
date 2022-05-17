@@ -1,0 +1,29 @@
+.PressingInputContents {
+    height: 72vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.PressingListTextarea {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.PressingBarcordArea {
+    width: 98%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.PressingButtons {
+    display: flex;
+    height: 6vh;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top:20px; */
+}

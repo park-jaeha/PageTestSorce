@@ -1,0 +1,32 @@
+.A100SelectedLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.A100Buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.A100TextArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+.A110TextArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+.A150TextArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}

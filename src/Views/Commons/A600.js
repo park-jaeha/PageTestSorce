@@ -205,7 +205,14 @@ const A600 = (props) => {
                                         fontSize="16pt"
                                         height="10vh"
                                         buttonPress={() => {
-                                            props.onWrite(props.cartNo);
+                                            props.onWrite(
+                                                props.cartNo +
+                                                    props.lotId +
+                                                    props.itemCode +
+                                                    props.qty +
+                                                    props.equip +
+                                                    props.mkDt
+                                            );
                                         }}
                                         width="100%"
                                     />

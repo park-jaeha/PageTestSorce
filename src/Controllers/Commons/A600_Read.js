@@ -78,8 +78,52 @@ const A600 = (props) => {
             switch (record.recordType) {
                 case "text":
                     const textDecoder = new TextDecoder(record.encoding);
-                    setCartNo(textDecoder.decode(record.data));
-                    props.setCartNo(textDecoder.decode(record.data));
+                    let temp = textDecoder.decode(record.data);
+                    if (temp.length >= 5) {
+                        setCartNo(temp.substring(0, 5));
+                        props.setCartNo(temp.substring(0, 5));
+                    } else {
+                        setCartNo("");
+                        props.setCartNo("");
+                    }
+                    if (temp.length >= 20) {
+                        setLotId(temp.substring(5, 20));
+                        props.setLotId(temp.substring(5, 20));
+                    } else {
+                        setLotId("");
+                        props.setLotId("");
+                    }
+                    if (temp.length >= 26) {
+                        setItemCode(temp.substring(20, 26));
+                        props.setItemCode(temp.substring(20, 26));
+                    } else {
+                        setItemCode("");
+                        props.setItemCode("");
+                    }
+                    if (temp.length >= 33) {
+                        setQty(temp.substring(26, 33));
+                        props.setQty(temp.substring(26, 33));
+                    } else {
+                        setQty("");
+                        props.setQty("");
+                    }
+                    if (temp.length >= 38) {
+                        setEquip(temp.substring(33, 38));
+                        props.setEquip(temp.substring(33, 38));
+                    } else {
+                        setEquip("");
+                        props.setEquip("");
+                    }
+                    if (temp.length >= 52) {
+                        setMkDt(temp.substring(38, 52));
+                        props.setMkDt(temp.substring(38, 52));
+                    } else {
+                        setMkDt("");
+                        props.setMkDt("");
+                    }
+
+                    // setCartNo(textDecoder.decode(record.data));
+                    // props.setCartNo(textDecoder.decode(record.data));
                     break;
                 case "url":
                     // TODO: Read URL record with record data.

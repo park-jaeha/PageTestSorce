@@ -32,6 +32,11 @@ const A600_Write = (props) => {
 
     React.useEffect(() => {
         setCartNo(props.cartNo);
+        setLotId(props.lotId);
+        setItemCode(props.itemCode);
+        setQty(props.qty);
+        setEquip(props.equip);
+        setMkDt(props.mkDt);
     }, [props.cartNo]);
 
     const onWrite = async (message) => {

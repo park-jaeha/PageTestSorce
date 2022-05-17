@@ -17,6 +17,11 @@ import SnackBar from "../../Views/Components/MessageArea_Snack";
 function A600_Selected() {
     const [actions, setActions] = React.useState(null);
     const [cartNo, setCartNo] = React.useState(""); // 운반구 No.
+    const [lotId, setLotId] = React.useState(""); // LOT ID
+    const [itemCode, setItemCode] = React.useState(""); // 품목 코드
+    const [qty, setQty] = React.useState(""); // 적재량
+    const [equip, setEquip] = React.useState(""); // 생산설비
+    const [mkDt, setMkDt] = React.useState(""); // 생성일시
     const { scan, write } = actions || {};
     const actionsValue = { actions, setActions };
 
@@ -110,12 +115,22 @@ function A600_Selected() {
                         onHandleAction={onHandleAction}
                         cartNo={cartNo}
                         setCartNo={setCartNo}
+                        setLotId={setLotId}
+                        setItemCode={setItemCode}
+                        setQty={setQty}
+                        setEquip={setEquip}
+                        setMkDt={setMkDt}
                     />
                 )}
                 {write && (
                     <A600_Writ
                         onHandleAction={onHandleAction}
                         cartNo={cartNo}
+                        lotId={lotId}
+                        itemCode={itemCode}
+                        qty={qty}
+                        equip={equip}
+                        mkDt={mkDt}
                         OpenSnack={OpenSnack}
                     />
                 )}

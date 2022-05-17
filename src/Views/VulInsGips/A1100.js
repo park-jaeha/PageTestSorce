@@ -16,6 +16,7 @@ import A1100_DecisionPop from "./A1100_DecisionPop";
 import BasicDatePicker from "../Components/DatePicker_Basic";
 import A1100_DecResonPop from "./A1100_DecResonPop";
 import CICamera from "../Components/Camera/CICamera";
+import "./../../CSS/Materials/A100.css";
 
 const A1100 = (props) => {
     const [date, setDate] = React.useState(new Date()); // 생산일자 new Date()
